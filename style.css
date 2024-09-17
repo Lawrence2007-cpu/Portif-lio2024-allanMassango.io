@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+
+}
+
+
+body {
+    color: #ededed;
+    background-color: #000000;
+}
+
+.header {
+    background-color:transparent;
+    position: fixed;top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.ativo {
+    color: #ccc900;
+    
+}
+
+.Ínicio {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+  
+
+}
+
+
+
+
+.Ínicio-content {
+    background-color: transparent;
+    max-width: 600px;
+
+
+    
+}
+
+.Ínicio-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+
+}
+
+.Ínicio-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ccc900;
+
+}
+
+.Ínicio-content p {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 20px 0 40px;
+
+
+}
+
+.Ínicio-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+
+
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    width: 150px;
+    height: 100%px;
+    background-color: #ccc900;
+    border: 2px solid #ccc900;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+
+.btn-box a:nth-child(2){
+    background-color: transparent;
+    color: #ccc900;
+
+
+}
+
+.btn-box a:nth-child(2):hover {
+        color: #081b29;
+
+
+}
+
+.btn-box a:nth-child(2)::before {
+    background-color: #ccc900;
+
+}
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: .5s;
+
+
+}
+.btn-box a:hover::before {
+    width: 100%;
+
+
+}
+.Ínicio-scri {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    border: red;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.Ínicio-scri a {
+    position: relative;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   width: 40px;
+   height: 40px;
+   background: transparent;
+   border: 2px solid #ccc900;
+   border-radius: 50%;
+   font-size: 20px;
+   color: #ccc900;
+   text-decoration: none;
+   z-index: 1;
+   overflow: hidden;
+   transition: .5s;
+}
+
+.Ínicio-scri a:hover {
+    color: #081b29;
+
+
+}
+.Ínicio-scri a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: .5s;
+    background: #ccc900;
+
+}
+
+.Ínicio-scri a:hover::before {
+    width: 100%;
+
+}
+
+

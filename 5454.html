@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <a href="" class="logo"><H2>Contactos</H2></a>
+        <nav class="navbar">
+            <a href="index.html" class="ativo">Ínicio</a>
+            <a href="sobre.html">Sobre mim</a>
+            <a href="allan.html">Serviços</a>
+            <a href="porti.html">portifolio</a>
+            <a href="5454.html">contactos</a>
+            
+
+        </nav>
+
+    </header>
+    <div class="container">
+      
+        <div class="tabs">
+            <button class="tab-button active" onclick="showTab('address')">Endereço</button>
+            <button class="tab-button" onclick="showTab('email')">Email</button>
+            <button class="tab-button" onclick="showTab('phone')">Número de Telefone</button>
+        </div>
+        <div class="tab-content">
+            <div id="address" class="tab-pane active">
+                <h2>Endereço</h2>
+                <p>Rua do Canhueiro, C12<br>Bairro do Guava<br>Maputo Província<br></p>
+            </div>
+            <div id="email" class="tab-pane">
+                <h2>Email</h2>
+                <p><a href="allanmassangolawrence123@gmail.com">allanmassangolawrence123@gmail.com</a></p>
+            </div>
+            <div id="phone" class="tab-pane">
+                <h2>Número de Telefone</h2>
+                <p><a href="#">(+258)855497227 <br>(+258)875609276<br>(+258)839087437</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showTab(tabId) {
+           
+            const panes = document.querySelectorAll('.tab-pane');
+            panes.forEach(pane => pane.classList.remove('active'));
+
+          
+            const buttons = document.querySelectorAll('.tab-button');
+            buttons.forEach(button => button.classList.remove('active'));
+
+           
+            document.getElementById(tabId).classList.add('active');
+            document.querySelector(`.tab-button[onclick="showTab('${tabId}')"]`).classList.add('active');
+        }
+    </script>
+</body>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #0c0b0b;
+}
+
+
+.header {
+    background-color:transparent;
+    position: fixed;top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.ativo {
+    color: #ccc900;
+    
+}
+
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+
+
+
+
+.tabs {
+    display: flex;
+}
+
+.tab-button {
+    flex: 1;
+    padding: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.3s, color 0.3s;
+}
+
+.tab-button.active {
+    border-bottom-color: #ccc900;
+    color: #ccc900;
+}
+
+.tab-content {
+    padding: 20px;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+.tab-content a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+.tab-content a:hover {
+    text-decoration: underline;
+}
+
+</style>
+</html>

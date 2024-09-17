@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards com Efeito Hover</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <a href="" class="logo"><H2>Serviços</H2></a>
+        <nav class="navbar">
+            <a href="index.html" class="ativo">Ínicio</a>
+            <a href="sobre.html">Sobre mim</a>
+            <a href="allan.html">Serviços</a>
+            <a href="porti.html">portifolio</a>
+            <a href="5454.html">contactos</a>
+            
+
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="card-container">
+            <div class="card">
+                <img src="Captura de ecrã 2024-09-07 134239.png" alt="Imagem do Card 1" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Programação Web</h2>
+                    <p class="card-text">Faço trabalhos de crição de páginas web em HTML,CSS e Java-Script.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Captura de ecrã 2024-09-07 134519.png" alt="Imagem do Card 2" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Design Gráfico</h2>
+                    <p class="card-text">Faço design de logos, banners para divulgação de empresas.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Captura de ecrã 2024-09-07 134912.png" alt="Imagem do Card 3" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Eletrônica</h2>
+                    <p class="card-text">Faço reparação e crição de aparelhos Eletrônicos.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+<style>
+   
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #0c0b0b;
+}
+
+
+.header {
+    background-color:transparent;
+    position: fixed;top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.ativo {
+    color: #ccc900;
+    
+}
+
+
+main {
+    margin-top: 60px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+
+.card-container {
+    display: flex;
+    gap: 20px; 
+}
+
+
+.card {
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    color: #00abf0;
+}
+
+
+.card-image {
+    width: 100%;
+    height: 100%;
+}
+
+.card-image:hover {
+    top: 0;
+
+}
+
+
+.card-content {
+    padding: 16px;
+    color: #ccc900;
+}
+
+
+.card-title {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+
+.card-text {
+    font-size: 16px;
+    color: #666;
+}
+
+
+.card:hover {
+    background-color: #e0f7fa; 
+    box-shadow: 0 18px 20px  #ccc900; 
+    top: 16px;
+
+}
+
+
+</style>
+</html>
+
